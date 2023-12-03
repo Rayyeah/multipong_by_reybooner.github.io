@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplayer Pong</title>
+    <link rel="stylesheet" type="text/css" href="reah.css">
+   
+</head>
+<body>
+    <audio id="bounceSound">
+        <source src="bounce.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="scoreSound">
+        <source src="score.mp3" type="audio/mpeg">
+    </audio>
+
+    <h1 style="color: white;">Player 1</h1>
+    <div class="game-container">
+        <div class="ball" id="ball"></div>
+        <div class="paddle" id="leftPaddle"></div>
+        <div class="paddle" id="rightPaddle"></div>
+    </div>
+        
+    <div id="scoreboard">
+        <span id="leftScore">0</span> - <span id="rightScore">0</span>
+    </div>
+
+    <div id="winnerDisplay"></div>
+    <div class="middle-line"></div>
+    
+    <button id="startButton">Start Game</button>
+    <button id="tryAgainButton">Try Again</button>
+    
+    <h1 style="color:white;">Player 2</h1>
+
+    <script src="reah.js" defer></script>
+</body>
+</html>
